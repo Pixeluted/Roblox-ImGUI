@@ -88,7 +88,7 @@ function ImGui:FetchUI()
 	--// Universal
 	if not IsStudio then
 		local UIAssetId = ImGui.UIAssetId
-		UI = game:GetService("InsertService"):LoadLocalAsset(UIAssetId):GetChildren()[1]
+		UI = game:GetService("InsertService"):LoadLocalAsset(UIAssetId)
 	else --// Studio
 		local UIName = "DepsoImGui"
 		UI = PlayerGui:FindFirstChild(UIName) or script.DepsoImGui
